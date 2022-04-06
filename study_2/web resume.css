@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 40px;
+    font-style: oblique;
+    margin-bottom: 0px;
+}
+h2{
+    margin-bottom: 0px;
+    margin-top: 40px;
+    border-bottom-style: solid;
+    border-width: 1.5px;
+    border-color: #C1C1C1;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+}
+.gray{
+    color: gray;
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.top{
+    text-align: right;
+    padding-right: 30px;
+}
+.content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.about{
+    color: #DE4728;
+}
+.experience{
+    color: #FF903D;
+}
+.activities{
+    color: #31C949;
+}
