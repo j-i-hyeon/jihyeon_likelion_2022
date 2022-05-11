@@ -1,0 +1,7 @@
+.alert-box {
+	background: #aba8f4;
+	color: #4646b4;
+	padding: 20px;
+	border-radius: 5px;
+	display: none;   /*UI같은거 보여주고 안보여주고 할때는 대체로 display 코드 사용*/
+}

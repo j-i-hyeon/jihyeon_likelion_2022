@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+<head>
+<body>
+	<div class="alert-box" id="alert">
+		<p>Alert 박스</p>
+        <button onclick="document.getElementById('alert').style.display = 'none';">닫기</button>
+            <!--onclick="" : 버튼 클릭했을 때 ""안의 코드 실행해달라는 뜻
+            display 부분을 block으로 바꿔달라-->
+	</div>
+	<button onclick="알림창열기();">버튼</button>
+    
+    <script>
+        function 알림창열기() {
+            document.getElementById('alert').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
