@@ -7,15 +7,22 @@
 <head>
 <body>
 	<div class="alert-box" id="alert">
-		<p>Alert 박스</p>
-        <button onclick="document.getElementById('alert').style.display = 'none';">닫기</button>
-            <!--onclick="" : 버튼 클릭했을 때 ""안의 코드 실행해달라는 뜻
-            display 부분을 block으로 바꿔달라-->
+		<p id="title">Alert 박스</p>
+        <button id="close"> X </button>
 	</div>
-	<button onclick="알림창열기();">버튼</button>
+
+	<button onclick="알림창1열기('아이디입력해라');">버튼1</button>
+    <button onclick="알림창1열기('비번입력해라');">버튼2</button>
     
     <script>
-        function 알림창열기() {
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+        /*EventListener에서 첫번째 파라미터는 조건(event), 두번째 파라미터는 조건 해당 시 실행되는 것
+        event : click, scroll, mouseover 등등*/
+        
+        function 알림창1열기(구멍) {
+            document.getElementById('title').innerHTML = 구멍;
             document.getElementById('alert').style.display = 'block';
         }
     </script>
