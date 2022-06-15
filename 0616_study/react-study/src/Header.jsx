@@ -10,24 +10,16 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
-import { useNavigate } from 'react-router-dom';
 function Header({ darkMode, setDarkMode }) {
-  const navigate = useNavigate();
-
-  const goHome = () => {
-    navigate('/');
-  };
-  const toggleDarkMode = () => {
+    const toggleDarkMode = () => {
     setDarkMode((darkMode) => !darkMode);
   };
   return (
     <HeaderDiv>
-      <CursorDiv>
-        <TitleLogoDiv onClick={goHome}>
+        <TitleLogoDiv>
           <TitleBig>멋사</TitleBig>
           <TitleSmall>익명게시판</TitleSmall>
         </TitleLogoDiv>
-      </CursorDiv>
       <SubHeaderDiv>
         {darkMode ? (
           <FontAwesomeIcon onClick={toggleDarkMode} icon={faSun} />
